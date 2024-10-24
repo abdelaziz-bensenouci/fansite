@@ -61,17 +61,35 @@ main{
     
 }
 .contenaire_main{
-    background-image: url(img/zinedine/stade3-min.jpg);
+    background-image: url(../img/zinedine/stade2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
+}
+.container_accueil{
+    background-image: url(../img/zinedine/zinedine5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 230px;
+}
+.container_accueil a{
+    text-decoration: none;
+}
+.h1_zidane:hover{
+    background-color: #007BFF;
+    font-size: 30px;
+    transition: 0.5s;
 }
 .h1_zidane{
-    font-size: 48px;
+    background-color: white;
+    margin-left: 80%;
+    font-size: 28px;
     text-align: center;       
-    font-family: "Pacifico", cursive;
-    margin: 0;
-    padding: 30px;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 20px;
 }
 h2{
     text-align: center;
@@ -81,45 +99,37 @@ h3 {
 }
 hr{
     color: white;
-    margin: 40px 0;
+    margin: 0px 0;
     border: white solid 2px;
 }
 section{
     margin: 0 20px;
 }
-.contenaire_presentation{
-    display: flex;
+#section-presentation {
+    margin-top: 40px;
+    background-color: white; 
+    padding: 2px;
+    border-radius: 8px;
 }
-#presentation {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 18px; 
-    line-height: 1.6; 
-    color: #333; 
-    max-width: 800px; 
-    margin: 0 20px; 
-    padding: 5px 10px 5px 10px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-}
-
-#presentation p {
-    margin-bottom: 20px; 
+#section-presentation article{
+    font-size: 20px;
 }
 .img_presentation {
     border-radius: 20px;
     display: block; 
-    margin: 80px 20px; 
+    margin: 0 auto; 
     width: 600px;
     height: 400px;
 }
 #section-actualite {
+    font-size: 20px;
     margin-top: 20px;
     background-color: white; 
     padding: 2px;
     border-radius: 8px;
 }
 #section-realisations {
+    font-size: 20px;
     background-color: white; 
     padding: 2px;
     border-radius: 8px;
@@ -127,6 +137,7 @@ section{
     
 }
 #section-evenements {
+    font-size: 20px;
     margin-top: 20px;
     background-color: white; 
     padding: 2px;
@@ -159,12 +170,14 @@ summary:hover {
     margin-left: 20%;
 }
 #photos-videos {
+    font-size: 20px;
     margin-top: 20px;
     background-color: white; 
     padding: 2px;
     border-radius: 8px;
 }
 #liens {
+    font-size: 20px;
     margin-top: 20px;
     background-color: white; 
     padding: 2px;
@@ -201,6 +214,7 @@ li{
     text-align: center;
 }
 article {
+    margin: 20px;
     font-size: 18px;
 }
 img{
@@ -372,9 +386,10 @@ button:hover {
         padding: 10px; 
         box-sizing: border-box; 
     }
+    
 
     /*----------------------------------------------------------------------------------------------------
-                                            Header
+                                            Main
     /*Header---------------------------------------------------------------------------------------------*/
     .contenaire_presentation{
         display: flex;
@@ -391,10 +406,6 @@ button:hover {
         color: white;
         text-decoration: none;
     }
-
-    /*----------------------------------------------------------------------------------------------------
-                                            Main
-    /*Header---------------------------------------------------------------------------------------------*/
     section{
         margin: 0 20px;
     }
@@ -413,7 +424,7 @@ button:hover {
 
     /*----------------------------------------------------------------------------------------------------
                                             Footer
-    /*Header---------------------------------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------------------------------------*/
     .nav_footer {
         padding: 0;
         flex-direction: column; 

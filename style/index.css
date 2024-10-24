@@ -1,0 +1,167 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+body {
+    display: flex;
+    flex-direction: column; 
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                            HEADER
+-------------------------------------------------------------------------------------------------------*/
+header {
+    background-color: black;
+}
+.nav_header {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid black;
+}
+
+.nav_header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+.nav_header nav li {
+    margin-right: 60px;
+}
+
+.nav_header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav_header a:hover {
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+}
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                            Main
+-------------------------------------------------------------------------------------------------------*/
+main{
+    flex: 1; 
+    
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------------------
+                                            FOOTER
+-------------------------------------------------------------------------------------------------------*/
+footer{
+    background-color: black;
+}
+.nav_footer {
+    text-align: center;  
+    padding: 10px 0;     
+    border-top: 2px solid black; 
+}
+
+.nav_footer nav ul {
+    list-style-type: none; 
+    padding: 0;           
+    margin: 0;            
+    display: inline-flex; 
+}
+.nav_footer nav li {
+    margin-right: 60px; 
+}
+
+.nav_footer nav li:last-child {
+    margin-right: 0; 
+}
+.nav_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav_footer a:hover{
+    color: white;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.nav_footer h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 14px; 
+    color: white; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                            Media queries
+-------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1386px) {
+    .hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 1385px) {
+    /*----------------------------------------------------------------------------------------------------
+                                            Header
+    /*Header---------------------------------------------------------------------------------------------*/
+    .hamburger {
+        margin: 20px 20px;
+    }
+    .nav_header {
+        display: none; 
+    }
+    .nav {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 5px; 
+        margin: 0; 
+        gap: 10px; 
+        width: 100%; 
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        width: 100%; 
+        text-align: center;
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+
+    /*----------------------------------------------------------------------------------------------------
+                                            Main
+    /*---------------------------------------------------------------------------------------------------*/
+   
+
+    /*----------------------------------------------------------------------------------------------------
+                                            Footer
+    /*--------------------------------------------------------------------------------------------------*/
+    .nav_footer {
+        padding: 0;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: left; 
+    }
+
+    .nav_footer nav ul {
+        flex-direction: column; 
+    }
+    .nav_footer a {
+        font-size: 15px;
+    }
+}
