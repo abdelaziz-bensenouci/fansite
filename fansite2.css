@@ -1,0 +1,225 @@
+:root {
+    --rouge_indochine : #fe0000
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------------------------------------- 
+style de la section présentation */
+
+.presentation {
+    background-color: var(--rouge_indochine);
+    margin-left: 10%;
+    text-align: center;
+    h1 {
+        font-size: 60px;
+        font-family: Kaushan Script;
+    }
+    .presentation-article {
+        font-size: 35px;
+    }
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------- 
+style de la section actualité */
+
+.actualite {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/indochine/background-indo2.jpg);
+    background-size: cover;
+    margin-bottom: 40px;
+    gap: 40px;
+    .actualite-article {
+        background-color: black;
+        color: white;
+        width: 60%;
+        padding: 3%;
+    }
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------
+style de la section événements */
+
+.evenements {
+    margin-left: 10%;
+    background-image: url(img/indochine/background-indo1.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .list-concert {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .concert {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #b720bc;
+        color: white;
+        text-align: center;
+        width: 600px;
+        margin-top: 10px;
+    }
+    
+    a {
+        color: white;
+    }
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+style de la section discograpghie,
+mosaique avec pochette album,
+superposer à la pochette le titre de l'album et le logo spotify */
+
+.discographie {
+    margin-left: 10%;
+    background-color: var(--rouge_indochine);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-flow: wrap;
+    gap: 5%;
+    .album {
+        font-size: 25px;
+        font-weight: bold;
+        position: relative;
+        height: 300px;
+    }
+    
+    .img-album {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .com-album {
+        position: absolute;
+        z-index: 2;
+        left: 5%;
+        top: 80%;
+    }
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------
+style de la section photos-videos
+mosaique sans gap */
+
+.photos-videos {
+    background-color: black;
+    color: rgb(214, 215, 216);
+    margin-left: 10%;
+    margin-top: 10%;
+    display: grid;
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------
+style de la section liens-externe */
+
+.liens-externes {
+    margin-left: 10%;
+    background-color: var(--rouge_indochine);
+}
+
+/*----------------------------------------------------------------------------------------------------------
+style du header */
+
+header{
+    background-color: black;
+}
+.nav_header{
+    text-align: center;  
+    padding: 20px 0;     
+    border-top: 2px solid black; 
+}
+.nav_header nav ul {
+    list-style-type: none; 
+    padding: 0;           
+    margin: 0;            
+    display: inline-flex; 
+}
+.nav_header nav li {
+    margin-right: 60px; 
+}
+
+.nav_header nav li:last-child {
+    margin-right: 0; 
+}
+.nav_header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav_header a:hover{
+    color: gray;
+    font-size: 30px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------
+style du footer */
+
+footer{
+    background-color: black;
+}
+.nav_footer {
+    text-align: center;  
+    padding: 20px 0;     
+    border-top: 2px solid black; 
+}
+
+.nav_footer nav ul {
+    list-style-type: none; 
+    padding: 0;           
+    margin: 0;            
+    display: inline-flex; 
+}
+
+.nav_footer nav li {
+    margin-right: 60px; 
+}
+
+.nav_footer nav li:last-child {
+    margin-right: 0; 
+}
+.nav_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav_footer h3 {
+    margin-top: 20px;
+    font-size: 14px;  
+    color: black;      
+}
+.nav_footer a:hover{
+    color: gray;
+    font-size: 25px;
+}
+
